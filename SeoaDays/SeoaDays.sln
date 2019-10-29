@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoaDays", "SeoaDays\SeoaDays.csproj", "{05801322-0C0C-477E-A0C2-F3A2890EE4A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05801322-0C0C-477E-A0C2-F3A2890EE4A6}.Debug|x86.ActiveCfg = Debug|x86
+		{05801322-0C0C-477E-A0C2-F3A2890EE4A6}.Debug|x86.Build.0 = Debug|x86
+		{05801322-0C0C-477E-A0C2-F3A2890EE4A6}.Release|x86.ActiveCfg = Release|x86
+		{05801322-0C0C-477E-A0C2-F3A2890EE4A6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

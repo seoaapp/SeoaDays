@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{05801322-0C0C-477E-A0C2-F3A2890EE4A6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SeoaDays/Program.cs">
+    <Files>
+      <File FileName="SeoaDays/Program.cs" Line="9" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SeoaDays" expanded="True">
+            <Node name="SeoaDays" expanded="True">
+              <Node name="Packages" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.SeoaDays FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
