@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Xml.Linq;
 using System.Threading.Tasks;
 using Discord;
@@ -36,6 +37,7 @@ namespace SeoaDays
                 string[] spacing = message.Split(' ');
                 if (message[0] == '=') //Prefix of SeoaDays is '=' (SeoaDays의 접두사는 '=')
                 {
+                    AddUser(msg.Author.Id);
                     ScheduleEN scheduleEN = new ScheduleEN();
                     ScheduleKO scheduleKO = new ScheduleKO();
                     if (spacing[0] == "=schedule")
@@ -67,17 +69,20 @@ namespace SeoaDays
         {
             XDocument xdoc = new XDocument(new XDeclaration("1.0", "UTF-8", null));
             try
-            { 
+            {
                 xdoc = XDocument.Load("data.xml");
             }
             catch
             {
                 XElement root = new XElement("data");
-                xdoc.Add(xdoc);
+                xdoc.Add(root);
             }
-            XElement newUser = new XElement(id.ToString(),"");
-            xdoc.Root.Add(newUser);
-            xdoc.Save("data.xml");
+            if (xdoc.Root.Element("_" + id.ToString()) == null)
+            {
+                XElement newUser = new XElement("_" + id.ToString(), "");
+                xdoc.Root.Add(newUser);
+                xdoc.Save("data.xml");
+            }
         }
 
         Task Client_Log(LogMessage arg)
