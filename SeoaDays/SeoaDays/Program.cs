@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 using System.Threading.Tasks;
 using Discord;
 using Discord.WebSocket;
@@ -11,11 +12,13 @@ namespace SeoaDays
       public static void Main(string[] args) => new Program().MainAsync().GetAwaiter().GetResult();
         public async Task MainAsync()
         {
+            //Get token (토큰 얻기)
            string token = System.IO.File.ReadAllText("token.txt");
             foreach (char t in token)
             {
                 token = token.Replace("\n", string.Empty);
             }
+            //Login (로그인)
             await client.LoginAsync(TokenType.Bot, token); 
             await client.StartAsync();
             client.MessageReceived += Client_MessageReceived;
@@ -25,9 +28,56 @@ namespace SeoaDays
             await Task.Delay(-1);
         }
 
-        async Task Client_MessageReceived(SocketMessage message)
+        async Task Client_MessageReceived(SocketMessage msg)
+        { 
+            if(!msg.Author.IsBot)
+            {
+                string message = msg.Content;
+                string[] spacing = message.Split(' ');
+                if (message[0] == '=') //Prefix of SeoaDays is '=' (SeoaDays의 접두사는 '=')
+                {
+                    ScheduleEN scheduleEN = new ScheduleEN();
+                    ScheduleKO scheduleKO = new ScheduleKO();
+                    if (spacing[0] == "=schedule")
+                    {
+                        if (spacing[1] == "add")
+                        {
+                            string content = null;
+                            int i = 0;
+                            foreach (string count in spacing)
+                            {
+                                if (i >= 4)
+                                {
+                                    content += count;
+                                }
+                                i++;
+                            }
+                            string add = scheduleEN.ScheduleAdd(msg.Author.Id, spacing[2], spacing[3], content);
+                        }
+                    }
+                    else if (spacing[0] == "=일정")
+                    {
+
+                    }
+                }
+            }
+        }
+
+        void AddUser(ulong id)
         {
-            Console.WriteLine(message);
+            XDocument xdoc = new XDocument(new XDeclaration("1.0", "UTF-8", null));
+            try
+            { 
+                xdoc = XDocument.Load("data.xml");
+            }
+            catch
+            {
+                XElement root = new XElement("data");
+                xdoc.Add(xdoc);
+            }
+            XElement newUser = new XElement(id.ToString(),"");
+            xdoc.Root.Add(newUser);
+            xdoc.Save("data.xml");
         }
 
         Task Client_Log(LogMessage arg)

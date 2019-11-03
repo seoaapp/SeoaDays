@@ -1,17 +1,17 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoaDays", "SeoaDays\SeoaDays.csproj", "{05801322-0C0C-477E-A0C2-F3A2890EE4A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoaDays", "SeoaDays/SeoaDays.csproj", "{00B912E1-75C1-463E-A0AE-5D80D527F69E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{05801322-0C0C-477E-A0C2-F3A2890EE4A6}.Debug|x86.ActiveCfg = Debug|x86
-		{05801322-0C0C-477E-A0C2-F3A2890EE4A6}.Debug|x86.Build.0 = Debug|x86
-		{05801322-0C0C-477E-A0C2-F3A2890EE4A6}.Release|x86.ActiveCfg = Release|x86
-		{05801322-0C0C-477E-A0C2-F3A2890EE4A6}.Release|x86.Build.0 = Release|x86
+		{00B912E1-75C1-463E-A0AE-5D80D527F69E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B912E1-75C1-463E-A0AE-5D80D527F69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B912E1-75C1-463E-A0AE-5D80D527F69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B912E1-75C1-463E-A0AE-5D80D527F69E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

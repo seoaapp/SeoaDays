@@ -1,7 +1,7 @@
-﻿<Properties StartupConfiguration="{05801322-0C0C-477E-A0C2-F3A2890EE4A6}|Default">
+﻿<Properties StartupConfiguration="{00B912E1-75C1-463E-A0AE-5D80D527F69E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="SeoaDays/Program.cs">
     <Files>
-      <File FileName="SeoaDays/Program.cs" Line="30" Column="40" />
+      <File FileName="SeoaDays/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +16,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.SeoaDays PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
