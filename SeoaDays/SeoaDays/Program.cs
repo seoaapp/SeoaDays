@@ -44,6 +44,7 @@ namespace SeoaDays
                     {
                         if (spacing[1] == "add")
                         {
+                            //=schedule add [Name] [Date] [Content]
                             string content = null;
                             int i = 0;
                             foreach (string count in spacing)

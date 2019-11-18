@@ -4789,19 +4789,19 @@
     ]
   },
   "packageFolders": {
-    "/home/cs5th/.nuget/packages/": {}
+    "/home/cs6th/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cs5th/바탕화면/프로그래밍/Seoa/SeoaDays/0 Nightly/SeoaDays/SeoaDays/SeoaDays.csproj",
+      "projectUniqueName": "/home/cs6th/바탕화면/Programming/SeoaDays/0 Nightly/SeoaDays/SeoaDays/SeoaDays.csproj",
       "projectName": "SeoaDays",
-      "projectPath": "/home/cs5th/바탕화면/프로그래밍/Seoa/SeoaDays/0 Nightly/SeoaDays/SeoaDays/SeoaDays.csproj",
-      "packagesPath": "/home/cs5th/.nuget/packages/",
-      "outputPath": "/home/cs5th/바탕화면/프로그래밍/Seoa/SeoaDays/0 Nightly/SeoaDays/SeoaDays/obj/",
+      "projectPath": "/home/cs6th/바탕화면/Programming/SeoaDays/0 Nightly/SeoaDays/SeoaDays/SeoaDays.csproj",
+      "packagesPath": "/home/cs6th/.nuget/packages/",
+      "outputPath": "/home/cs6th/바탕화면/Programming/SeoaDays/0 Nightly/SeoaDays/SeoaDays/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/cs5th/.config/NuGet/NuGet.Config"
+        "/home/cs6th/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
