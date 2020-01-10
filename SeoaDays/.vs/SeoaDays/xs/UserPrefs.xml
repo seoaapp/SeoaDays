@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{00B912E1-75C1-463E-A0AE-5D80D527F69E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="SeoaDays/Program.cs">
     <Files>
-      <File FileName="SeoaDays/Program.cs" Line="83" Column="40" />
-      <File FileName="SeoaDays/ScheduleEN.cs" Line="13" Column="13" />
+      <File FileName="SeoaDays/Program.cs" Line="28" Column="60" />
+      <File FileName="SeoaDays/ScheduleEN.cs" Line="28" Column="44" />
+      <File FileName="SeoaDays/ScheduleKO.cs" Line="27" Column="61" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

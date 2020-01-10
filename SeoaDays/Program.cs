@@ -15,10 +15,7 @@ namespace SeoaDays
         {
             //Get token (토큰 얻기)
            string token = System.IO.File.ReadAllText("token.txt");
-            foreach (char t in token)
-            {
-                token = token.Replace("\n", string.Empty);
-            }
+           Console.WriteLine(token);
             //Login (로그인)
             await client.LoginAsync(TokenType.Bot, token); 
             await client.StartAsync();
@@ -30,8 +27,8 @@ namespace SeoaDays
         }
 
         async Task Client_MessageReceived(SocketMessage msg)
-        { 
-            if(!msg.Author.IsBot)
+        {
+            if (!msg.Author.IsBot)
             {
                 string message = msg.Content;
                 string[] spacing = message.Split(' ');
@@ -56,11 +53,27 @@ namespace SeoaDays
                                 i++;
                             }
                             string add = scheduleEN.ScheduleAdd(msg.Author.Id, spacing[2], spacing[3], content);
+                            await msg.Channel.SendMessageAsync(add);
                         }
                     }
                     else if (spacing[0] == "=일정")
                     {
-
+                        if (spacing[1] == "추가")
+                        {
+                            //=일정 추가 [이름] [날짜] [내용]
+                            string content = null;
+                            int i = 0;
+                            foreach (string count in spacing)
+                            {
+                                if (i >= 4)
+                                {
+                                    content += count;
+                                }
+                                i++;
+                            }
+                            string add = scheduleKO.ScheduleAdd(msg.Author.Id, spacing[2], spacing[3], content);
+                            await msg.Channel.SendMessageAsync(add);
+                        }
                     }
                 }
             }
